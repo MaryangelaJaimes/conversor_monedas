@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./favicon.ico" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<title>Conversor de Monedas</title>
+</head>
+
+<body>
+
+	<header class="container-fluid">
+		<h1 class="titulo">Conversor de Monedas Nacional</h1>
+	</header>
+
+	<div class="container">
+		<div class="flex-container">
+			<div class="monto">
+				<h2>Pesos CLP</h2>
+				<input id="monto" type="number" min="0" max="100000" placeholder="Ingrese el monto en CLP">
+			</div>
+			<div class="moneda">
+				<h4> Moneda a Convertir:</h4>
+				<select name="Moneda" id="monedaSelected">
+					<option class="texto" value="dolar" id="dolar">Dolar</option>
+					<option class="texto" value="euro" id="euro">Euro</option>
+					<option class="texto" value="bitcoin" id="bitcoin">Bitcoin</option>
+					<option class="texto" value="uf" id="uf">UF</option>
+				</select>
+			</div>
+			<br>
+			<div>
+				<button id="button" type="button" class="button">Buscar</button>
+			</div>
+			<div>
+				<span id="resultado"></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="miGrafico">
+		<canvas id="myChart" class="myChart"></canvas>
+	</div>
+
+	<script src="./assets/js/app.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>
